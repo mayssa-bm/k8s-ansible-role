@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: flask
+  name: testpod
+  namespace: {{ namespace }}
+spec:
+  replicas: {{ replicas }}
+  
+ 
+  template:
+    metadata:
+      name: testpod 
+      labels:
+        app: flask
+    spec:
+      containers:
+      - image: {{ image }}
+        name: testpod
+        ports:
+  selector:
+    matchLabels:
+      app: flask
+

@@ -1,0 +1,12 @@
+---
+
+# vars file for k8s-pod
+
+
+
+replicas : 1
+
+
+
+image : maissa47/todo_app
+namespace: sandbox
