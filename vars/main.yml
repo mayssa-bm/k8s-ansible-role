@@ -1,12 +1,6 @@
 ---
-
-# vars file for k8s-pod
-
-
-
+# vars file for k8s-ansible-role
 replicas : 1
-
-
-
 image : maissa47/todo_app
-namespace: sandbox
+namespace: default
+
