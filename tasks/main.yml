@@ -1,9 +1,22 @@
-
 ---
+# tasks file for nexus_role
 
- name: create the deployments
+- name: create the deployments and services
   command:  kubectl apply -f -
   args:
       stdin: "{{ lookup('template', '{{ item }}-pod.yaml.j2') }}"
   loop:
     - deployment
+
+
+
+
+
+
+
+
+
+
+
+
+
